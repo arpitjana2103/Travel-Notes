@@ -1,6 +1,6 @@
 .product {
     padding: var(--padding-3rem);
-    min-height: calc(100vh - 5rem);
+    min-height: 100vh;
 }
 
 .product section {

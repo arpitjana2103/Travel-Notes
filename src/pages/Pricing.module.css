@@ -1,7 +1,7 @@
 .pricing {
     padding: var(--padding-3rem);
     /* background-color: var(--color-dark--1); */
-    min-height: calc(100vh - 5rem);
+    min-height: 100vh;
 }
 
 .pricing section {

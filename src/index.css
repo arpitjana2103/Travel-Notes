@@ -6,8 +6,8 @@
     --color-dark--1: #212529;
     --color-dark--2: #495057;
 
-    --color-light--1: #ececec;
-    --color-light--2: #d6dee0;
+    --color-light--1: #ffffff;
+    --color-light--2: #f1f3f5;
 
     --padding-3rem: 3rem;
 }
@@ -29,7 +29,7 @@ body {
     line-height: 1.6;
 }
 
-/* label {
+label {
     font-size: 1.6rem;
     font-weight: 600;
 }
@@ -42,14 +42,14 @@ textarea {
     font-size: 1.6rem;
     border: none;
     border-radius: 5px;
-    background-color: var(--color-light--3);
+    background-color: var(--color-light--1);
     transition: all 0.2s;
 }
 
 input:focus {
     outline: none;
     background-color: #fff;
-} */
+}
 
 .cta:link,
 .cta:visited {
