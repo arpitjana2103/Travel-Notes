@@ -1,10 +1,11 @@
 import { useState } from "react";
 import PageNav from "../components/PageNav";
 import styles from "./Login.module.css";
+import Button from "../components/Button";
 
 function Login() {
-    const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
+    const [email, setEmail] = useState("arpitjana@gmail.com");
+    const [password, setPassword] = useState("123456789");
 
     return (
         <main className={styles.login}>
@@ -31,7 +32,7 @@ function Login() {
                 </div>
 
                 <div>
-                    <button>Login</button>
+                    <Button type="primary">Login</Button>
                 </div>
             </form>
         </main>
