@@ -4,6 +4,8 @@ import PricingPage from "./pages/PricingPage";
 import ProductPage from "./pages/ProductPage";
 import LoginPage from "./pages/LoginPage";
 import AppLayout from "./pages/AppLayout";
+import CityList from "./components/CityList";
+import CountryList from "./components/CountryList";
 
 function AppRoutes() {
     return (
@@ -13,7 +15,10 @@ function AppRoutes() {
                 <Route path="/pricing" element={<PricingPage />} />
                 <Route path="/product" element={<ProductPage />} />
                 <Route path="/login" element={<LoginPage />} />
-                <Route path="/app" element={<AppLayout />} />
+                <Route path="/app" element={<AppLayout />}>
+                    <Route path="cities" element={<CityList />} />
+                    <Route path="countries" element={<CountryList />} />
+                </Route>
             </Routes>
         </BrowserRouter>
     );
