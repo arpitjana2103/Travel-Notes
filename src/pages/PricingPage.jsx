@@ -1,7 +1,7 @@
 import PageNav from "../components/PageNav";
-import styles from "./Pricing.module.css";
+import styles from "./PricingPage.module.css";
 
-function Pricing() {
+function PricingPage() {
     return (
         <main className={styles.pricing}>
             <PageNav />
@@ -27,4 +27,4 @@ function Pricing() {
     );
 }
 
-export default Pricing;
+export default PricingPage;

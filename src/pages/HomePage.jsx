@@ -18,7 +18,7 @@ function HomePage() {
                         experiences, and show your friends how you have wandered
                         the world.
                     </p>
-                    <a href="#" className="cta">
+                    <a href="/app" className="cta">
                         Start Tracking Now
                     </a>
                 </section>

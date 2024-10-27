@@ -1,9 +1,9 @@
 import { useState } from "react";
 import PageNav from "../components/PageNav";
-import styles from "./Login.module.css";
+import styles from "./LoginPage.module.css";
 import Button from "../components/Button";
 
-function Login() {
+function LoginPage() {
     const [email, setEmail] = useState("arpitjana@gmail.com");
     const [password, setPassword] = useState("123456789");
 
@@ -32,11 +32,11 @@ function Login() {
                 </div>
 
                 <div>
-                    <Button type="primary">Login</Button>
+                    <Button type="primary">login</Button>
                 </div>
             </form>
         </main>
     );
 }
 
-export default Login;
+export default LoginPage;

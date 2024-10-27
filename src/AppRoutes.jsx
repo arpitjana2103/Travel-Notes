@@ -1,17 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import Pricing from "./pages/Pricing";
-import Product from "./pages/Product";
-import Login from "./pages/Login";
+import PricingPage from "./pages/PricingPage";
+import ProductPage from "./pages/ProductPage";
+import LoginPage from "./pages/LoginPage";
+import AppLayout from "./pages/AppLayout";
 
 function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/pricing" element={<Pricing />} />
-                <Route path="/product" element={<Product />} />
-                <Route path="/login" element={<Login />} />
+                <Route path="/pricing" element={<PricingPage />} />
+                <Route path="/product" element={<ProductPage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/app" element={<AppLayout />} />
             </Routes>
         </BrowserRouter>
     );
