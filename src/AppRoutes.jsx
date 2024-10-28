@@ -6,6 +6,7 @@ import LoginPage from "./pages/LoginPage";
 import AppLayout from "./pages/AppLayout";
 import CityList from "./components/CityList";
 import CountryList from "./components/CountryList";
+import { Navigate } from "react-router-dom";
 
 function AppRoutes() {
     return (
@@ -16,6 +17,7 @@ function AppRoutes() {
                 <Route path="/product" element={<ProductPage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/app" element={<AppLayout />}>
+                    <Route index element={<Navigate replace to="cities" />} />
                     <Route path="cities" element={<CityList />} />
                     <Route path="countries" element={<CountryList />} />
                 </Route>
